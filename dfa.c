@@ -362,7 +362,7 @@ uint16_t dfa_k29_with_sfll(
     */
 
     //WHEN DELTA1 AND DELTA2 ARE BOTH LEGAL
-    if ((pos != 1) && (check_delta(delta[2], pos) == 0)){
+    if ((pos != -1) && (check_delta(delta[2], pos) == 0)){
         int tmp = GETBIT(delta[2], pos);
         roundtext_record_r28[(pos+11)%16] = tmp;
         tmp = GETBIT(delta[2], pos+5);

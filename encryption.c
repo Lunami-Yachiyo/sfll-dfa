@@ -13,7 +13,7 @@
 } while (0)
 
 const int NUM_ROUNDS = 32;
-const int HAMMING_VALUE = 4;
+const int HAMMING_VALUE = 8;
 int hamming_weight(uint16_t text);
 int hamming_distance_uint16(uint16_t a, uint16_t b);
 
